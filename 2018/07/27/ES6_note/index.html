@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="#ES6_note 1、let和const命令=  let声明变量，类似于var，它声明的变量只在代码块有效。比较适合for循环的计数器。   for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。父作用域定义后子作用域又定义了，取决于子作用域。   不存在变量提升，而var有变量提升。var会输出undefined，let报错。使用let和cons">
+<meta name="description" content="ES6_note1、let和const命令  let声明变量，类似于var，它声明的变量只在代码块有效。比较适合for循环的计数器。   for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。父作用域定义后子作用域又定义了，取决于子作用域。   不存在变量提升，而var有变量提升。var会输出undefined，let报错。使用let和const命令">
 <meta name="keywords" content="ES6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6笔记">
 <meta property="og:url" content="http://MyKepler.github.io/2018/07/27/ES6_note/index.html">
 <meta property="og:site_name" content="Kepler&#39;s Blog">
-<meta property="og:description" content="#ES6_note 1、let和const命令=  let声明变量，类似于var，它声明的变量只在代码块有效。比较适合for循环的计数器。   for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。父作用域定义后子作用域又定义了，取决于子作用域。   不存在变量提升，而var有变量提升。var会输出undefined，let报错。使用let和cons">
+<meta property="og:description" content="ES6_note1、let和const命令  let声明变量，类似于var，它声明的变量只在代码块有效。比较适合for循环的计数器。   for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。父作用域定义后子作用域又定义了，取决于子作用域。   不存在变量提升，而var有变量提升。var会输出undefined，let报错。使用let和const命令">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-31T01:03:24.740Z">
+<meta property="og:updated_time" content="2019-08-16T09:20:35.317Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6笔记">
-<meta name="twitter:description" content="#ES6_note 1、let和const命令=  let声明变量，类似于var，它声明的变量只在代码块有效。比较适合for循环的计数器。   for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。父作用域定义后子作用域又定义了，取决于子作用域。   不存在变量提升，而var有变量提升。var会输出undefined，let报错。使用let和cons">
+<meta name="twitter:description" content="ES6_note1、let和const命令  let声明变量，类似于var，它声明的变量只在代码块有效。比较适合for循环的计数器。   for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。父作用域定义后子作用域又定义了，取决于子作用域。   不存在变量提升，而var有变量提升。var会输出undefined，let报错。使用let和const命令">
 
 
 
@@ -344,8 +344,7 @@
       
 
       
-        <p>#ES6_note</p>
-<p>1、let和const命令<br>=</p>
+        <h1 id="ES6-note"><a href="#ES6-note" class="headerlink" title="ES6_note"></a>ES6_note</h1><p>1、let和const命令</p>
 <blockquote>
 <p>let声明变量，类似于var，它声明的变量只在代码块有效。比较适合for循环的计数器。</p>
 </blockquote>
@@ -371,8 +370,8 @@
 <blockquote>
 <p>顶层对象，在浏览器环境指的是window对象，在 Node 指的是global对象。ES5 之中，顶层对象的属性与全局变量是等价的。ES6 为了改变这一点，一方面规定，为了保持兼容性，var命令和function命令声明的全局变量，依旧是顶层对象的属性；另一方面规定，let命令、const命令、class命令声明的全局变量，不属于顶层对象的属性。也就是说，从 ES6 开始，全局变量将逐步与顶层对象的属性脱钩。</p>
 </blockquote>
-<p>2、变量的解构赋值<br>=</p>
-<p>1)数组的解构赋值<br>-</p>
+<p>2、变量的解构赋值</p>
+<p>1)数组的解构赋值</p>
 <p>为变量赋值。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a,b,c]=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br></pre></td></tr></table></figure>
 <p>如果解构不成功，变量的值就等于undefined。如果等号右边不是数组，就会报错。</p>
@@ -595,14 +594,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/27/JS_note/" rel="next" title="JS笔记">
+                <i class="fa fa-chevron-left"></i> JS笔记
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/27/JS_note/" rel="prev" title="JS笔记">
-                JS笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/08/16/vue移动端h5适配解决方案（rem-or-vw）/" rel="prev" title="vue移动端h5适配解决方案（rem or vw）">
+                vue移动端h5适配解决方案（rem or vw） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -655,8 +658,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -675,7 +687,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -744,6 +756,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ES6-note"><span class="nav-number">1.</span> <span class="nav-text">ES6_note</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -757,7 +785,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
