@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://MyKepler.github.io/"/>
-  <updated>2020-03-26T02:53:19.983Z</updated>
+  <updated>2020-12-22T04:24:29.292Z</updated>
   <id>http://MyKepler.github.io/</id>
   
   <author>
@@ -15,6 +15,175 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://MyKepler.github.io/2020/12/22/%E5%BC%80%E5%8F%91%E8%80%85%E9%9D%A2%E6%9D%BF/"/>
+    <id>http://MyKepler.github.io/2020/12/22/开发者面板/</id>
+    <published>2020-12-22T04:24:29.292Z</published>
+    <updated>2020-12-22T04:24:29.292Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于Chrome</title>
+    <link href="http://MyKepler.github.io/2020/10/17/%E5%85%B3%E4%BA%8EChrome/"/>
+    <id>http://MyKepler.github.io/2020/10/17/关于Chrome/</id>
+    <published>2020-10-17T02:45:38.000Z</published>
+    <updated>2020-12-22T04:22:19.228Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="1"><a href="#1" class="headerlink" title="1. $_"></a>1. $_</h5><p>$_ 是对上次执行的结果的引用。</p><h5 id="2-i、fehelper"><a href="#2-i、fehelper" class="headerlink" title="2. $i、fehelper"></a>2. $i、fehelper</h5><p>在 Chrome插件: Console Importer 的帮助之下，你可以快速的在 console 中引入一些 npm 库。<br>直接运行例如 $i(‘lodash’) 或者 $i(‘moment’) 几秒钟之后，就可以获取到 lodash / momentjs 了。</p><h5 id="3-copy-…"><a href="#3-copy-…" class="headerlink" title="3. copy(…)"></a>3. copy(…)</h5><p>你可以通过全局的方法 copy() 在 console 里 copy 任何你能拿到的资源，包括我们在上一篇中提及的那些变量。例如 copy($_) 或者 copy($0)</p><h5 id="4-Store-as-global"><a href="#4-Store-as-global" class="headerlink" title="4. Store as global"></a>4. Store as global</h5><p>如果你在 console 中打印了一堆数据(例如 App 中计算出来的一个数组),然后你想对这些数据进行额外操作， 例如，使用我们刚刚说的 copy ，那就可以轻松将它转换成一个全局变量：<br>只需右击，并且选择 Store as global variable (保存为全局变量) 这个选项。</p><h5 id="5-保存-Stack-trace-堆栈跟踪"><a href="#5-保存-Stack-trace-堆栈跟踪" class="headerlink" title="5. 保存(Stack trace)堆栈跟踪"></a>5. 保存(Stack trace)堆栈跟踪</h5><p>对于排除错误有很大作用<br>鼠标右键，选择save as …</p><h5 id="6-Snippets"><a href="#6-Snippets" class="headerlink" title="6. Snippets"></a>6. Snippets</h5><p>可以执行一段自定义脚本<br>鼠标右键点击脚本，run运行脚本</p><h5 id="7-Run-snippets-from-wherever"><a href="#7-Run-snippets-from-wherever" class="headerlink" title="7. Run snippets from wherever"></a>7. Run snippets from wherever</h5><p>[ctrl] + [p] 输入 ! 运行自定义脚本</p><h5 id="8-使用console的实时表达式"><a href="#8-使用console的实时表达式" class="headerlink" title="8. 使用console的实时表达式"></a>8. 使用console的实时表达式</h5><p>眼睛符号，定义实时更新的js表达式</p><h5 id="9-开始使用-Command-命令-菜单-如果你还没有用过的话"><a href="#9-开始使用-Command-命令-菜单-如果你还没有用过的话" class="headerlink" title="9. 开始使用 Command (命令) 菜单 (如果你还没有用过的话)"></a>9. 开始使用 Command (命令) 菜单 (如果你还没有用过的话)</h5><p>有一些 Dev Tools 的功能被深深的隐藏在特别的面板/菜单 中。甚至有一些还隐藏在他们（面板/菜单）下面。这也是为什么 Command 菜单，是在 Dev Tools 中必不可少的一个工具。<br>如果你使用过 WebStorm 中的 Find Action (查找动作) 或者 Visual Studio Code 中的 Command Palette 那么 (Command 菜单) 也是类似的功能。可以这样调出它：<br>在 Chrome 的调试打开的情况下:<br>• 按下 [ Ctrl]+[Shift]+[P] (or [⌘]+[Shift]+[P] on Mac)<br>• 使用 DevTools 的 dropdown 的 run command</p><h5 id="10-截屏，大小通吃"><a href="#10-截屏，大小通吃" class="headerlink" title="10.截屏，大小通吃"></a>10.截屏，大小通吃</h5><p>如果你想对某个特别的 DOM 节点进行截图，选中那个节点，打开 Command 菜单并且寻找节点截图的命令。<br>四种命令截图，输入：<br>• capture</p><h5 id="11-快速切换主题"><a href="#11-快速切换主题" class="headerlink" title="11.快速切换主题"></a>11.快速切换主题</h5><p>你是否讨厌突然的强光，并且无法忍受一直看着白光闪闪的屏幕？或者你一直都在黑暗的模式下工作，但突然太阳出来了，照在你的 DevTools 上导致你什么都看不到？<br>在 Commands菜单中寻找与 theme 相关的选项，以实现在明亮&amp;暗黑两种主题之间的切换。</p><h5 id="12-在控制台可以直接使用await，不用非要包裹在async函数中"><a href="#12-在控制台可以直接使用await，不用非要包裹在async函数中" class="headerlink" title="12.在控制台可以直接使用await，不用非要包裹在async函数中"></a>12.在控制台可以直接使用await，不用非要包裹在async函数中</h5><p>res = await fetch(‘<a href="http://localhost:5678/getjson&#39;)" target="_blank" rel="noopener">http://localhost:5678/getjson&#39;)</a>;<br>json = await res.json();</p><h5 id="13-queryObjects-function-对象查询方法"><a href="#13-queryObjects-function-对象查询方法" class="headerlink" title="13. queryObjects function 对象查询方法"></a>13. queryObjects function 对象查询方法</h5><p>假如我们有这样一段代码，我们在里面定义了一些对象。<br>那么特定的时刻，特定的执行上下文中，存在哪些对象呢？<br>• 例：queryObjects(Person)</p><h5 id="14-monitor-functions-镜像函数"><a href="#14-monitor-functions-镜像函数" class="headerlink" title="14. monitor functions 镜像函数"></a>14. monitor functions 镜像函数</h5><p>monitor 是 DevTools 的一个方法, 它能够让你 spy(潜入) 到任何 “function calls(方法的调用)” 中：每当一个 spied 被潜入 的方法运行的时候，console 控制台 会把它的实例打印出来，包含函数名以及调用它的参数。<br>• 例：monitor(person1.getMessage);person1.greet();</p><h5 id="15-monitorEvents-function-monitorEvents函数"><a href="#15-monitorEvents-function-monitorEvents函数" class="headerlink" title="15. monitorEvents function monitorEvents函数"></a>15. monitorEvents function monitorEvents函数</h5><p>我们讨论了用 monitor 方法来监听函数？你可以使用名为 monitorEvents 的函数，对 events 做一样的事情。<br>• monitorEvents($0, ‘click’);<br>bug：使用moment转换字符串时间的时候一定要加上时间格式，在火狐浏览器可能会出现时间时区出险错误<br>例：moment(‘2019-01-01’, ‘YYYY-MM-DD’).valueOf()</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1. $_&quot;&gt;&lt;/a&gt;1. $_&lt;/h5&gt;&lt;p&gt;$_ 是对上次执行的结果的引用。&lt;/p&gt;
+&lt;h5 id=&quot;2-i、fehelper&quot;&gt;&lt;a href=&quot;#2-i、fehelper&quot;
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://MyKepler.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="浏览器" scheme="http://MyKepler.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css autoprefix 问题</title>
+    <link href="http://MyKepler.github.io/2020/07/27/css%20autoprefix%20%E9%97%AE%E9%A2%98/"/>
+    <id>http://MyKepler.github.io/2020/07/27/css autoprefix 问题/</id>
+    <published>2020-07-27T05:45:38.000Z</published>
+    <updated>2020-12-22T04:15:44.568Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>Scss 中特定的 CSS 属性无法被正常编译</p><h5 id="期望表现行为"><a href="#期望表现行为" class="headerlink" title="期望表现行为"></a>期望表现行为</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">// 编译前</span><br><span class="line">  @mixin ellipsis($lines: 1, $lineHeight: 1em) &#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">    text-overflow: ellipsis;</span><br><span class="line">    word-break: break-word;</span><br><span class="line">    @if $lines == 1 &#123;</span><br><span class="line">      white-space: nowrap;</span><br><span class="line">    &#125; @else &#123;</span><br><span class="line">      line-height: $lineHeight;</span><br><span class="line">      display: -webkit-box;</span><br><span class="line">      -webkit-box-orient: vertical;</span><br><span class="line">      -webkit-line-clamp: $lines;</span><br><span class="line">      max-height: $lineHeight * $lines;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  .ellispis--l2 &#123;</span><br><span class="line">    @include ellipsis(2);</span><br><span class="line">  &#125;</span><br><span class="line">  // 编译后</span><br><span class="line">  .ellispis--l2 &#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">    text-overflow: ellipsis;</span><br><span class="line">    word-break: break-word;</span><br><span class="line">    line-height: 1em;</span><br><span class="line">    display: -webkit-box;</span><br><span class="line">    -webkit-box-orient: vertical;</span><br><span class="line">    -webkit-line-clamp: 2;</span><br><span class="line">    max-height: 2em;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><h5 id="实际表现行为"><a href="#实际表现行为" class="headerlink" title="实际表现行为"></a>实际表现行为</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.ellispis--l2 &#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">    text-overflow: ellipsis;</span><br><span class="line">    word-break: break-word;</span><br><span class="line">    line-height: 1em;</span><br><span class="line">    display: -webkit-box;</span><br><span class="line">    -webkit-line-clamp: 2;</span><br><span class="line">    max-height: 2em;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><h3 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h3><p>由于 postcss autoprefix 功能自动增加前缀的功能导致 -webkit-box-orient: vertical 在实际生成的代码中被忽略了</p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* autoprefixer: off */</span><br><span class="line">  -webkit-box-orient: vertical;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h3&gt;&lt;p&gt;Scss 中特定的 CSS 属性无法被正常编译&lt;/p&gt;
+&lt;h5 id=&quot;期望表现行为&quot;&gt;&lt;a href=&quot;#期望表现行为&quot; 
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://MyKepler.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="浏览器" scheme="http://MyKepler.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>联调瓶颈</title>
+    <link href="http://MyKepler.github.io/2020/07/19/%E8%81%94%E8%B0%83%E7%93%B6%E9%A2%88/"/>
+    <id>http://MyKepler.github.io/2020/07/19/联调瓶颈/</id>
+    <published>2020-07-19T02:50:49.000Z</published>
+    <updated>2020-12-22T04:08:09.736Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h4><ol><li>接口规范<br>配合</li><li>文档<br>moc数据与正式数据不一致</li><li>需求理解<br>前后端对于某个功能，数据返回与期望不匹配。</li><li>稳定性<br>环境<br>测试服务器不稳定</li><li>沟通成本<br>异地沟通</li><li>后端接口自测</li></ol><h4 id="整体流程："><a href="#整体流程：" class="headerlink" title="整体流程："></a>整体流程：</h4><ol><li>定规范，接口放在哪，接口形式</li><li>需求理解，双方交流，后端提前设计</li><li>排期，前后端资源匹配</li><li>接口文档，文档即时更新和全</li><li>自测，让测试，测试接口</li><li>环境，接口稳定，有套完善的测试环境</li><li>沟通，异地沟通成本大</li><li>自动化，讲整个流程串联起来,比如moc数据和真实接口数据的匹配</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;问题：&quot;&gt;&lt;a href=&quot;#问题：&quot; class=&quot;headerlink&quot; title=&quot;问题：&quot;&gt;&lt;/a&gt;问题：&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;接口规范&lt;br&gt;配合&lt;/li&gt;
+&lt;li&gt;文档&lt;br&gt;moc数据与正式数据不一致&lt;/li&gt;
+&lt;li&gt;需求理解&lt;br&gt;前后端
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://MyKepler.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="浏览器" scheme="http://MyKepler.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Iframe解决方案</title>
+    <link href="http://MyKepler.github.io/2020/06/26/iframe%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>http://MyKepler.github.io/2020/06/26/iframe解决方案/</id>
+    <published>2020-06-26T02:50:59.000Z</published>
+    <updated>2020-12-22T04:04:11.126Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="页面整体加载流程"><a href="#页面整体加载流程" class="headerlink" title="页面整体加载流程"></a>页面整体加载流程</h3><p>• 0 ~ 3000 ms 模板页面加载（白屏和闪屏现象均出现在此阶段）<br>• 3000 ~ 3200 ms 导航栏、侧边栏渲染完成<br>• 3200 ~ 4500 ms 前端资源加载<br>• 4500 ~ 6000 ms 后端接口请求<br>用户从点击菜单栏到最后可以正常操作平均总计需要等待6000ms（以上均为正常网络状况的数据，实际一线医生的使用状况会在基础上上浮 30 ~ 50 %）</p><h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><ol><li>后端服务器响应时间过长，部分页面TTFB达到30秒以上，大多页面都在2.7s以上。</li><li>CDN 配置（缓存时间过短，TTFB时间过长，不支持 Combo）</li><li>无用代码过多且没有压缩</li><li>接口响应时间过长<br>a. TTFB 时间过长<br>b. 返回头内容过多，每次都设置了set-cookie<br>c. 接口都没有配置缓存时间</li><li>JS 资源加载问题<br>a. JS 资源都为同步加载（阻塞页面渲染和执行）<br>b. JS 前端脚本加载时机过于靠后<br>c. 无用 JS 引入<br>d. 模块资源代码异步加载</li><li>css资源过大，并且没有做延迟加载<br>a. 目前很多页面的css资源文件超过1M<br>b. css会抢占网络资源，阻塞页面的渲染<br>c. css文件没有combo</li></ol><h3 id="优化结果"><a href="#优化结果" class="headerlink" title="优化结果"></a>优化结果</h3><ol><li>优化了页面跳转的白屏和闪屏现象</li><li>增加了全局的加载指示器</li></ol><h3 id="复盘存在的问题"><a href="#复盘存在的问题" class="headerlink" title="复盘存在的问题"></a>复盘存在的问题</h3><ol><li>IE 下表现比未使用方案体验更差。（由于嵌套两层模板的问题，现有资源重复加载导致内存占用过多）</li><li>仍然会有白屏的偶现情况出现</li><li>单页应用接入未完成</li><li>弹框由 JS 触发，当前方法无法正确提升层级的问题</li><li>IE 下 iFrame 垃圾回收问题</li><li>容器 Resize 触发后相关事件的未能重新初始化</li></ol><h3 id="主观原因"><a href="#主观原因" class="headerlink" title="主观原因"></a>主观原因</h3><h4 id="技术部分"><a href="#技术部分" class="headerlink" title="技术部分"></a>技术部分</h4><ol><li>前期对浏览器兼容性的问题考虑的不够全面，在上线前花费了较多时间去处理。尤其是 IE 浏览器下，使用体验并没有显著提高（由于 iframe 在IE下存在的GC问题，现有方案导致全局变量装载了两次，增加了内存的占用）</li><li>对已有的样式兼容没有覆盖全面（原有样式冗余过多，且不知道具体影响范围，因此只做了简单的样式覆盖以及样式压缩）</li><li>没有做好 MVP，只是简单的验证的方案可行性，而没有考虑好一些实际业务场景中可能会遇到的问题。</li></ol><h4 id="非技术部分"><a href="#非技术部分" class="headerlink" title="非技术部分"></a>非技术部分</h4><ol><li>对已有业务场景调研不够充分<br>a. 顶部导航栏通信内容较多，改造成本略高<br>b. 存在内外通信问题（主体内容控制导航栏侧边栏）</li></ol><h3 id="客观因素"><a href="#客观因素" class="headerlink" title="客观因素"></a>客观因素</h3><ol><li>对后端层面了解欠缺<br>a. 工作站存在 HTTP 和 HTTPS 链接共存的情况，同时全站也没有做 HTTPS 强制跳转(可能是因为浏览器的兼容性问题，强跳HTTPS会导致服务不可用)<br>b. iframe 内部弹窗先用方案无法实现全屏效果(因为无法检测到层级提升，之后优化方案)<br>最终优化的 SDK</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;页面整体加载流程&quot;&gt;&lt;a href=&quot;#页面整体加载流程&quot; class=&quot;headerlink&quot; title=&quot;页面整体加载流程&quot;&gt;&lt;/a&gt;页面整体加载流程&lt;/h3&gt;&lt;p&gt;• 0 ~ 3000 ms 模板页面加载（白屏和闪屏现象均出现在此阶段）&lt;br&gt;• 3000
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://MyKepler.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="浏览器" scheme="http://MyKepler.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>diff算法引起的DOM错位问题</title>
+    <link href="http://MyKepler.github.io/2020/05/16/diff%E7%AE%97%E6%B3%95%E5%BC%95%E8%B5%B7%E7%9A%84DOM%E9%94%99%E4%BD%8D%E9%97%AE%E9%A2%98/"/>
+    <id>http://MyKepler.github.io/2020/05/16/diff算法引起的DOM错位问题/</id>
+    <published>2020-05-16T14:45:38.000Z</published>
+    <updated>2020-12-22T04:11:06.683Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h3><p>假设现在表格有5列，现在在第4列上面添加列一个header scopeSlot<br>操作过程中，将第三列移除，会报错。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">this.columnConfig.renderHeader = (h, scope) =&gt; &#123;</span><br><span class="line">        // 这里强制判断header的值</span><br><span class="line">        // 由于diff算法只修改元素的值，不会移除掉原来的元素，所以这里的columnIndex在重绘后变得不正确了。</span><br><span class="line">        return (this.$scopedSlots.header &amp;&amp; this.$scopedSlots.header(scope)) || scope.column.label;</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure></p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>因为diff算法比对后，并不是更新所有的DOM，而是把所有的子级向前“平移”赋值，导致附加的属性错位。</p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>对于指令，一定要追加 componentUpdated 事件的钩子。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;现象&quot;&gt;&lt;a href=&quot;#现象&quot; class=&quot;headerlink&quot; title=&quot;现象&quot;&gt;&lt;/a&gt;现象&lt;/h3&gt;&lt;p&gt;假设现在表格有5列，现在在第4列上面添加列一个header scopeSlot&lt;br&gt;操作过程中，将第三列移除，会报错。&lt;br&gt;&lt;figur
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://MyKepler.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="浏览器" scheme="http://MyKepler.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Element-UI表格性能问题</title>
+    <link href="http://MyKepler.github.io/2020/04/26/Element-UI%E8%A1%A8%E6%A0%BC%E6%80%A7%E8%83%BD%E9%97%AE%E9%A2%98/"/>
+    <id>http://MyKepler.github.io/2020/04/26/Element-UI表格性能问题/</id>
+    <published>2020-04-26T02:45:38.000Z</published>
+    <updated>2020-12-22T04:13:12.890Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h3><p>在使用weaver进行渲染表格时。近期在单元格比较多，并且每个单元格都有tooltip的情况下。<br>执行如下操作：<br> tab切换 –&gt; 清空排序 –&gt; 重新设置排序 –&gt; 发送请求 –&gt; 重设数据<br>会出现CPU飙升，页面卡顿，甚至完全没有响应的情况。</p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>综合分析了一下，发现主要有两个原因。</p><ol><li>大量的计算表达式，这些表达式并没有被复用，而是每次都new Function产生。这会导致短时间内大量分配内存，执行完一次渲染后，又触发浏览器大量GC。</li><li>表格本身的节点过多，因为有tooltip等。每次清空排序和重新排序，实际上执行了两次重绘。</li></ol><h3 id="处理方案"><a href="#处理方案" class="headerlink" title="处理方案"></a>处理方案</h3><p>处理上，除了优化weaver自身的实现以外，也考虑如何避免大量节点的重绘。</p><ol><li>对于new Function产生的计算表达式进行缓存。不需要每次都分配内存。</li><li>在切换tab前，如果要进行清空排序和重新排序，可以先把数据置空。这样可以避免节点比对带来的大量性能损耗。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;现象&quot;&gt;&lt;a href=&quot;#现象&quot; class=&quot;headerlink&quot; title=&quot;现象&quot;&gt;&lt;/a&gt;现象&lt;/h3&gt;&lt;p&gt;在使用weaver进行渲染表格时。近期在单元格比较多，并且每个单元格都有tooltip的情况下。&lt;br&gt;执行如下操作：&lt;br&gt; tab切换 
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://MyKepler.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="浏览器" scheme="http://MyKepler.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>浅谈如何防御Web安全攻击</title>
@@ -125,6 +294,31 @@
   </entry>
   
   <entry>
+    <title>JS笔记</title>
+    <link href="http://MyKepler.github.io/2018/07/27/JS_note/"/>
+    <id>http://MyKepler.github.io/2018/07/27/JS_note/</id>
+    <published>2018-07-27T06:48:24.000Z</published>
+    <updated>2020-03-26T02:35:49.915Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、JavaScript会返回数据类型(typeof)：字符串（String）、数字(Number)、布尔(Boolean)、对象(Object)、未定义（Undefined）、函数（function）。【数组、日期、null之类的返回object】,不用typeof,用A.constructor返回所有 JavaScript 变量,包括下面10个变量类型。</p><pre><code>5 种不同的数据类型：string、number、boolean、object、function3 种对象类型：Object、Date、Array2 个不包含任何值的数据类型：null、undefined</code></pre><p>  对象寻址/访问对象属性的两种方法：</p><pre><code>name=person.lastname;name=person[&quot;lastname&quot;];</code></pre><p>  如果对象是一个函数，就用name=person.fullName();如果不加括号，则直接输出函数，而不是结果。</p><pre><code>创建对象方法：methodName : function() { ... }访问对象方法：objectName.methodName()</code></pre><p>  声明变量类型可以直接用new来声明其类型或者赋值。</p><p>2、JavaScript变量生存周期：局部变量在函数运行之后被删除；全局变量在页面关闭后被删除。</p><p>   对未声明的变量赋值，该变量自动作为window的一个属性。<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">例：<span class="keyword">var</span> var1 = <span class="number">1</span>; <span class="comment">// 不可配置全局属性</span></span><br><span class="line">    var2 = <span class="number">2</span>; <span class="comment">// 没有使用 var 声明，可配置全局属性</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.var1); <span class="comment">// 1</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">window</span>.var1); <span class="comment">// 1</span></span><br><span class="line">    <span class="keyword">delete</span> var1; <span class="comment">// false 无法删除</span></span><br><span class="line">     <span class="built_in">console</span>.log(var1); <span class="comment">//1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">delete</span> var2; </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">delete</span> var2); <span class="comment">// true</span></span><br><span class="line">    <span class="built_in">console</span>.log(var2); <span class="comment">// 已经删除 报错变量未定义</span></span><br></pre></td></tr></table></figure></p><p>   调用变量：(如果定义了carName，即var carName，外部不能调用函数内部的变量)<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">//此处可使用 window.carName</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      carName = <span class="string">"Volvo"</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="string">``</span><span class="string">` </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">3、JavaScript作用域：可访问变量、对象、函数的集合。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">4、JavaScript函数</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">   内置构造函数：</span></span><br><span class="line"><span class="string">   `</span><span class="string">``</span> javascript</span><br><span class="line">   <span class="keyword">var</span> myFunction = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"return a * b"</span>);</span><br><span class="line">   <span class="keyword">var</span> x = myFunction(<span class="number">4</span>, <span class="number">3</span>);</span><br></pre></td></tr></table></figure></p><p>   自调用函数：<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = <span class="string">"Hello! 我是自己调用的"</span>;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p><p>   JavaScript 函数有个内置的对象 arguments 对象。argument 对象包含了函数调用的参数数组。<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">x = findMax(<span class="number">1</span>, <span class="number">123</span>, <span class="number">500</span>, <span class="number">115</span>, <span class="number">44</span>, <span class="number">88</span>);</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">findMax</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> i, max = <span class="built_in">arguments</span>[<span class="number">0</span>];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">arguments</span>.length &lt; <span class="number">2</span>) <span class="keyword">return</span> max;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="built_in">arguments</span>.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">arguments</span>[i] &gt; max) &#123;</span><br><span class="line">            max = <span class="built_in">arguments</span>[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> max;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>   使用构造函数调用函数【如果函数调用前使用了 new 关键字, 则是调用了构造函数。】<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 构造函数:</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params">arg1, arg2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.firstName = arg1;</span><br><span class="line">    <span class="keyword">this</span>.lastName  = arg2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// This creates a new object</span></span><br><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> myFunction(<span class="string">"John"</span>,<span class="string">"Doe"</span>);</span><br><span class="line">x.firstName;<span class="comment">// 返回 "John"</span></span><br></pre></td></tr></table></figure></p><p>   作为函数方法调用函数.【call() 和 apply() 是预定义的函数方法。 两个方法可用于调用函数，两个方法的第一个参数必须是对象本身。】<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br><span class="line">myArray = [<span class="number">10</span>, <span class="number">2</span>];</span><br><span class="line">myObject = myFunction.apply(myObject, myArray);<span class="comment">// 返回 20</span></span><br></pre></td></tr></table></figure></p><p>   函数闭包<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> add = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> counter = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;<span class="keyword">return</span> counter += <span class="number">1</span>;&#125;</span><br><span class="line">&#125;)();</span><br><span class="line"> </span><br><span class="line">add();</span><br><span class="line">add();</span><br><span class="line">add();</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、JavaScript会返回数据类型(typeof)：字符串（String）、数字(Number)、布尔(Boolean)、对象(Object)、未定义（Undefined）、函数（function）。【数组、日期、null之类的返回object】,不用typeof,用A
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://MyKepler.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="JS" scheme="http://MyKepler.github.io/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ES6笔记</title>
     <link href="http://MyKepler.github.io/2018/07/27/ES6_note/"/>
     <id>http://MyKepler.github.io/2018/07/27/ES6_note/</id>
@@ -151,31 +345,6 @@
     
     
       <category term="ES6" scheme="http://MyKepler.github.io/tags/ES6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS笔记</title>
-    <link href="http://MyKepler.github.io/2018/07/27/JS_note/"/>
-    <id>http://MyKepler.github.io/2018/07/27/JS_note/</id>
-    <published>2018-07-27T06:48:24.000Z</published>
-    <updated>2020-03-26T02:35:49.915Z</updated>
-    
-    <content type="html"><![CDATA[<p>1、JavaScript会返回数据类型(typeof)：字符串（String）、数字(Number)、布尔(Boolean)、对象(Object)、未定义（Undefined）、函数（function）。【数组、日期、null之类的返回object】,不用typeof,用A.constructor返回所有 JavaScript 变量,包括下面10个变量类型。</p><pre><code>5 种不同的数据类型：string、number、boolean、object、function3 种对象类型：Object、Date、Array2 个不包含任何值的数据类型：null、undefined</code></pre><p>  对象寻址/访问对象属性的两种方法：</p><pre><code>name=person.lastname;name=person[&quot;lastname&quot;];</code></pre><p>  如果对象是一个函数，就用name=person.fullName();如果不加括号，则直接输出函数，而不是结果。</p><pre><code>创建对象方法：methodName : function() { ... }访问对象方法：objectName.methodName()</code></pre><p>  声明变量类型可以直接用new来声明其类型或者赋值。</p><p>2、JavaScript变量生存周期：局部变量在函数运行之后被删除；全局变量在页面关闭后被删除。</p><p>   对未声明的变量赋值，该变量自动作为window的一个属性。<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">例：<span class="keyword">var</span> var1 = <span class="number">1</span>; <span class="comment">// 不可配置全局属性</span></span><br><span class="line">    var2 = <span class="number">2</span>; <span class="comment">// 没有使用 var 声明，可配置全局属性</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.var1); <span class="comment">// 1</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">window</span>.var1); <span class="comment">// 1</span></span><br><span class="line">    <span class="keyword">delete</span> var1; <span class="comment">// false 无法删除</span></span><br><span class="line">     <span class="built_in">console</span>.log(var1); <span class="comment">//1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">delete</span> var2; </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">delete</span> var2); <span class="comment">// true</span></span><br><span class="line">    <span class="built_in">console</span>.log(var2); <span class="comment">// 已经删除 报错变量未定义</span></span><br></pre></td></tr></table></figure></p><p>   调用变量：(如果定义了carName，即var carName，外部不能调用函数内部的变量)<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">//此处可使用 window.carName</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      carName = <span class="string">"Volvo"</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="string">``</span><span class="string">` </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">3、JavaScript作用域：可访问变量、对象、函数的集合。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">4、JavaScript函数</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">   内置构造函数：</span></span><br><span class="line"><span class="string">   `</span><span class="string">``</span> javascript</span><br><span class="line">   <span class="keyword">var</span> myFunction = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"return a * b"</span>);</span><br><span class="line">   <span class="keyword">var</span> x = myFunction(<span class="number">4</span>, <span class="number">3</span>);</span><br></pre></td></tr></table></figure></p><p>   自调用函数：<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = <span class="string">"Hello! 我是自己调用的"</span>;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p><p>   JavaScript 函数有个内置的对象 arguments 对象。argument 对象包含了函数调用的参数数组。<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">x = findMax(<span class="number">1</span>, <span class="number">123</span>, <span class="number">500</span>, <span class="number">115</span>, <span class="number">44</span>, <span class="number">88</span>);</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">findMax</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> i, max = <span class="built_in">arguments</span>[<span class="number">0</span>];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">arguments</span>.length &lt; <span class="number">2</span>) <span class="keyword">return</span> max;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="built_in">arguments</span>.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">arguments</span>[i] &gt; max) &#123;</span><br><span class="line">            max = <span class="built_in">arguments</span>[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> max;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>   使用构造函数调用函数【如果函数调用前使用了 new 关键字, 则是调用了构造函数。】<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 构造函数:</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params">arg1, arg2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.firstName = arg1;</span><br><span class="line">    <span class="keyword">this</span>.lastName  = arg2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// This creates a new object</span></span><br><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> myFunction(<span class="string">"John"</span>,<span class="string">"Doe"</span>);</span><br><span class="line">x.firstName;<span class="comment">// 返回 "John"</span></span><br></pre></td></tr></table></figure></p><p>   作为函数方法调用函数.【call() 和 apply() 是预定义的函数方法。 两个方法可用于调用函数，两个方法的第一个参数必须是对象本身。】<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br><span class="line">myArray = [<span class="number">10</span>, <span class="number">2</span>];</span><br><span class="line">myObject = myFunction.apply(myObject, myArray);<span class="comment">// 返回 20</span></span><br></pre></td></tr></table></figure></p><p>   函数闭包<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> add = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> counter = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;<span class="keyword">return</span> counter += <span class="number">1</span>;&#125;</span><br><span class="line">&#125;)();</span><br><span class="line"> </span><br><span class="line">add();</span><br><span class="line">add();</span><br><span class="line">add();</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1、JavaScript会返回数据类型(typeof)：字符串（String）、数字(Number)、布尔(Boolean)、对象(Object)、未定义（Undefined）、函数（function）。【数组、日期、null之类的返回object】,不用typeof,用A
-      
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://MyKepler.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="JS" scheme="http://MyKepler.github.io/tags/JS/"/>
     
   </entry>
   
