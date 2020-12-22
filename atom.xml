@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://MyKepler.github.io/"/>
-  <updated>2020-12-22T04:24:29.292Z</updated>
+  <updated>2020-12-22T04:32:12.370Z</updated>
   <id>http://MyKepler.github.io/</id>
   
   <author>
@@ -17,16 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://MyKepler.github.io/2020/12/22/%E5%BC%80%E5%8F%91%E8%80%85%E9%9D%A2%E6%9D%BF/"/>
-    <id>http://MyKepler.github.io/2020/12/22/开发者面板/</id>
-    <published>2020-12-22T04:24:29.292Z</published>
-    <updated>2020-12-22T04:24:29.292Z</updated>
+    <title>Observable对象赋值差异</title>
+    <link href="http://MyKepler.github.io/2020/11/27/Observable%E5%AF%B9%E8%B1%A1%E8%B5%8B%E5%80%BC%E5%B7%AE%E5%BC%82/"/>
+    <id>http://MyKepler.github.io/2020/11/27/Observable对象赋值差异/</id>
+    <published>2020-11-27T03:45:38.000Z</published>
+    <updated>2020-12-22T04:32:12.370Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><p>对Observable进行设置值的时候，发现我们依据model中的数据进行计算的一个变量。总是会在第一次不能获取到最新的值。排查后发现，渲染函数先于计算表达式执行。</p><h3 id="场景描述"><a href="#场景描述" class="headerlink" title="场景描述"></a>场景描述</h3><p>设置变量 $model = {status: { loading: true, error: false }, … }<br>某个对象对$model进行深度监听。</p><h3 id="赋值逻辑"><a href="#赋值逻辑" class="headerlink" title="赋值逻辑"></a>赋值逻辑</h3><ol><li>当设置：$model.status = { loading: true, error: false }<br>这个时候会触发三次监听事件，依次为 change:status, change:loading, change:error<br>因为计算表达式是监听后面两个的，所以当change:status触发的时候，不会触发计算。</li><li>如果设置：$model.status.loading = true; $model.status.error = false<br>这个时候只会触发两次监听事件，依次为change:loading, change:error<br>由于没有change:status事件，所以不能引起问题。</li></ol>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h3 id=&quot;问题现象&quot;&gt;&lt;a href=&quot;#问题现象&quot; class=&quot;headerlink&quot; title=&quot;问题现象&quot;&gt;&lt;/a&gt;问题现象&lt;/h3&gt;&lt;p&gt;对Observable进行设置值的时候，发现我们依据model中的数据进行计算的一个变量。总是会在第一次不能获取到最新的值。
+      
+    
     </summary>
     
+      <category term="学习笔记" scheme="http://MyKepler.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="JS" scheme="http://MyKepler.github.io/tags/JS/"/>
     
   </entry>
   
